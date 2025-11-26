@@ -39,7 +39,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::middleware(['auth', 'signed'])->group(function () {
-    Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    Route::get('/email/verify/{id}/{hash}', static function (EmailVerificationRequest $request) {
         $request->fulfill();
 
         return redirect(route('home'));

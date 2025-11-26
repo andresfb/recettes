@@ -15,10 +15,9 @@ use Livewire\Component;
 #[Layout('components.layouts.auth')]
 final class Login extends Component
 {
-
     public LoginForm $form;
 
-    public function login()
+    public function login(): void
     {
         $this->validate();
 
@@ -26,7 +25,7 @@ final class Login extends Component
 
         Session::regenerate();
 
-        Toast::success("You have successfully logged in!"); 
+        Toast::success("You have successfully logged in!");
 
         $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
     }

@@ -1,2 +1,2 @@
 # Recettes
-An webapp to catalog my recipes
+A webapp to catalog my recipes

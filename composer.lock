@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3de93a029dfee02468b2532845ac692a",
+    "content-hash": "4e72f0a0eea8b379bbbf5fe23dad9ff1",
     "packages": [
         {
             "name": "brick/math",
@@ -2017,82 +2017,6 @@
             "time": "2025-11-18T12:17:23+00:00"
         },
         {
-            "name": "livewire/livewire",
-            "version": "v3.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/livewire/livewire.git",
-                "reference": "f5f9efe6d5a7059116bd695a89d95ceedf33f3cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/f5f9efe6d5a7059116bd695a89d95ceedf33f3cb",
-                "reference": "f5f9efe6d5a7059116bd695a89d95ceedf33f3cb",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "^10.0|^11.0|^12.0",
-                "illuminate/routing": "^10.0|^11.0|^12.0",
-                "illuminate/support": "^10.0|^11.0|^12.0",
-                "illuminate/validation": "^10.0|^11.0|^12.0",
-                "laravel/prompts": "^0.1.24|^0.2|^0.3",
-                "league/mime-type-detection": "^1.9",
-                "php": "^8.1",
-                "symfony/console": "^6.0|^7.0",
-                "symfony/http-kernel": "^6.2|^7.0"
-            },
-            "require-dev": {
-                "calebporzio/sushi": "^2.1",
-                "laravel/framework": "^10.15.0|^11.0|^12.0",
-                "mockery/mockery": "^1.3.1",
-                "orchestra/testbench": "^8.21.0|^9.0|^10.0",
-                "orchestra/testbench-dusk": "^8.24|^9.1|^10.0",
-                "phpunit/phpunit": "^10.4|^11.5",
-                "psy/psysh": "^0.11.22|^0.12"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Livewire": "Livewire\\Livewire"
-                    },
-                    "providers": [
-                        "Livewire\\LivewireServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Livewire\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Caleb Porzio",
-                    "email": "calebporzio@gmail.com"
-                }
-            ],
-            "description": "A front-end framework for Laravel.",
-            "support": {
-                "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.7.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/livewire",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-11-12T17:58:16+00:00"
-        },
-        {
             "name": "monolog/monolog",
             "version": "3.9.0",
             "source": {
@@ -3362,66 +3286,6 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.1"
             },
             "time": "2025-09-04T20:59:21+00:00"
-        },
-        {
-            "name": "sheaf/cli",
-            "version": "v1.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sheafui/cli.git",
-                "reference": "c6716094495f770344005a046366edcb04d89b06"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sheafui/cli/zipball/c6716094495f770344005a046366edcb04d89b06",
-                "reference": "c6716094495f770344005a046366edcb04d89b06",
-                "shasum": ""
-            },
-            "require-dev": {
-                "orchestra/testbench": "^10.4",
-                "pestphp/pest": "^3.8",
-                "pestphp/pest-plugin-laravel": "^3.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Sheaf\\Cli\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sheaf\\Cli\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Youssef ACHCHIRAJ",
-                    "email": "achchiraj.youssef@gmail.com",
-                    "homepage": "https://youssef-achchiraj.com",
-                    "role": "Full Stack Developer"
-                }
-            ],
-            "description": "A CLI tool for Sheaf UI",
-            "homepage": "https://github.com/sheaf/cli",
-            "keywords": [
-                "artisan-command",
-                "cli",
-                "laravel",
-                "laravel-package",
-                "package",
-                "sheaf"
-            ],
-            "support": {
-                "issues": "https://github.com/sheafui/cli/issues",
-                "source": "https://github.com/sheafui/cli/tree/v1.3.2"
-            },
-            "time": "2025-11-05T20:33:11+00:00"
         },
         {
             "name": "symfony/clock",
@@ -6124,69 +5988,6 @@
                 }
             ],
             "time": "2024-11-21T01:49:47+00:00"
-        },
-        {
-            "name": "wireui/heroicons",
-            "version": "v2.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wireui/heroicons.git",
-                "reference": "ccd2ab94293d6f231271c0847c1db34305313c6f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wireui/heroicons/zipball/ccd2ab94293d6f231271c0847c1db34305313c6f",
-                "reference": "ccd2ab94293d6f231271c0847c1db34305313c6f",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^9.16|^10.0|^11.0|^12.0",
-                "php": "^8.1|^8.2|^8.3|^8.4"
-            },
-            "require-dev": {
-                "larastan/larastan": "^3.0",
-                "laravel/pint": "^1.6",
-                "orchestra/testbench": "^10.0",
-                "pestphp/pest": "^3.0"
-            },
-            "type": "library",
-            "extra": {
-                "aliases": [],
-                "laravel": {
-                    "providers": [
-                        "WireUi\\Heroicons\\HeroiconsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "WireUi\\Heroicons\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pedro Oliveira",
-                    "email": "pedrolivertwd@gmail.com"
-                }
-            ],
-            "description": "The Tailwind Heroicons for laravel blade by WireUI",
-            "keywords": [
-                "blade components",
-                "blade heroicons",
-                "laravel components",
-                "livewire icons",
-                "livewire icons components",
-                "wireui"
-            ],
-            "support": {
-                "issues": "https://github.com/wireui/heroicons/issues",
-                "source": "https://github.com/wireui/heroicons/tree/v2.9.0"
-            },
-            "time": "2025-03-02T22:06:22+00:00"
         }
     ],
     "packages-dev": [
@@ -6638,6 +6439,145 @@
             "time": "2025-03-19T14:43:43+00:00"
         },
         {
+            "name": "laravel/boost",
+            "version": "v1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/boost.git",
+                "reference": "cf57ba510df44e0d4ed2c1c91360477e92d7d644"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/boost/zipball/cf57ba510df44e0d4ed2c1c91360477e92d7d644",
+                "reference": "cf57ba510df44e0d4ed2c1c91360477e92d7d644",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.9",
+                "illuminate/console": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/contracts": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/routing": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/support": "^10.49.0|^11.45.3|^12.28.1",
+                "laravel/mcp": "^0.3.4",
+                "laravel/prompts": "0.1.25|^0.3.6",
+                "laravel/roster": "^0.2.9",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "1.20",
+                "mockery/mockery": "^1.6.12",
+                "orchestra/testbench": "^8.36.0|^9.15.0|^10.6",
+                "pestphp/pest": "^2.36.0|^3.8.4",
+                "phpstan/phpstan": "^2.1.27",
+                "rector/rector": "^2.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Boost\\BoostServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Boost\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel Boost accelerates AI-assisted development by providing the essential context and structure that AI needs to generate high-quality, Laravel-specific code.",
+            "homepage": "https://github.com/laravel/boost",
+            "keywords": [
+                "ai",
+                "dev",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/boost/issues",
+                "source": "https://github.com/laravel/boost"
+            },
+            "time": "2025-11-20T18:13:17+00:00"
+        },
+        {
+            "name": "laravel/mcp",
+            "version": "v0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/mcp.git",
+                "reference": "0b86fb613a0df971cec89271c674a677c2cb4f77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/mcp/zipball/0b86fb613a0df971cec89271c674a677c2cb4f77",
+                "reference": "0b86fb613a0df971cec89271c674a677c2cb4f77",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "illuminate/console": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/container": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/contracts": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/http": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/json-schema": "^12.28.1",
+                "illuminate/routing": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/support": "^10.49.0|^11.45.3|^12.28.1",
+                "illuminate/validation": "^10.49.0|^11.45.3|^12.28.1",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "1.20.0",
+                "orchestra/testbench": "^8.36.0|^9.15.0|^10.6.0",
+                "pestphp/pest": "^2.36.0|^3.8.4|^4.1.0",
+                "phpstan/phpstan": "^2.1.27",
+                "rector/rector": "^2.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Mcp": "Laravel\\Mcp\\Server\\Facades\\Mcp"
+                    },
+                    "providers": [
+                        "Laravel\\Mcp\\Server\\McpServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Mcp\\": "src/",
+                    "Laravel\\Mcp\\Server\\": "src/Server/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Rapidly build MCP servers for your Laravel applications.",
+            "homepage": "https://github.com/laravel/mcp",
+            "keywords": [
+                "laravel",
+                "mcp"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/mcp/issues",
+                "source": "https://github.com/laravel/mcp"
+            },
+            "time": "2025-11-18T14:41:05+00:00"
+        },
+        {
             "name": "laravel/pail",
             "version": "v1.2.4",
             "source": {
@@ -6782,6 +6722,67 @@
                 "source": "https://github.com/laravel/pint"
             },
             "time": "2025-11-25T21:15:52+00:00"
+        },
+        {
+            "name": "laravel/roster",
+            "version": "v0.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/roster.git",
+                "reference": "82bbd0e2de614906811aebdf16b4305956816fa6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/roster/zipball/82bbd0e2de614906811aebdf16b4305956816fa6",
+                "reference": "82bbd0e2de614906811aebdf16b4305956816fa6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
+                "illuminate/routing": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "php": "^8.1|^8.2",
+                "symfony/yaml": "^6.4|^7.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.14",
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^8.22.0|^9.0|^10.0",
+                "pestphp/pest": "^2.0|^3.0",
+                "phpstan/phpstan": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Roster\\RosterServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Roster\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Detect packages & approaches in use within a Laravel project",
+            "homepage": "https://github.com/laravel/roster",
+            "keywords": [
+                "dev",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/roster/issues",
+                "source": "https://github.com/laravel/roster"
+            },
+            "time": "2025-10-20T09:56:46+00:00"
         },
         {
             "name": "laravel/sail",
@@ -7417,72 +7418,6 @@
                 }
             ],
             "time": "2025-08-20T12:46:37+00:00"
-        },
-        {
-            "name": "pestphp/pest-plugin-livewire",
-            "version": "v4.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pestphp/pest-plugin-livewire.git",
-                "reference": "cc30502ef62487d9a0bec5e73b64d59eec3b5f42"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin-livewire/zipball/cc30502ef62487d9a0bec5e73b64d59eec3b5f42",
-                "reference": "cc30502ef62487d9a0bec5e73b64d59eec3b5f42",
-                "shasum": ""
-            },
-            "require": {
-                "livewire/livewire": "^3.6.4",
-                "pestphp/pest": "^4.0.0",
-                "php": "^8.3"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^10.6.0",
-                "pestphp/pest-dev-tools": "^4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Autoload.php"
-                ],
-                "psr-4": {
-                    "Pest\\Livewire\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "The Pest Livewire Plugin",
-            "keywords": [
-                "framework",
-                "livewire",
-                "pest",
-                "php",
-                "plugin",
-                "test",
-                "testing",
-                "unit"
-            ],
-            "support": {
-                "source": "https://github.com/pestphp/pest-plugin-livewire/tree/v4.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/nunomaduro",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/nunomaduro",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2025-08-21T09:16:34+00:00"
         },
         {
             "name": "pestphp/pest-plugin-mutate",

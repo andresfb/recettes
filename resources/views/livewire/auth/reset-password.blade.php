@@ -1,44 +1,52 @@
-<div class="mx-auto mt-24 max-w-xl">
-    <x-ui.fieldset label="Reset your password">
-        <form wire:submit="resetPassword" x-data="form">
-            <x-ui.field required>
-                <x-ui.label>email address</x-ui.label>
-                <x-ui.input 
-                    wire:model.blur="email"
-                    type="email"
-                    placeholder="Enter your email address"
-                />
-                <x-ui.error name="email" />
-            </x-ui.field>
+<x-layouts.auth>
+    <div class="flex flex-col gap-6">
+        <x-auth-header :title="__('Reset password')" :description="__('Please enter your new password below')" />
 
-            <x-ui.field required>
-                <x-ui.label>password</x-ui.label>
-                <x-ui.input 
-                    wire:model.blur="password"
-                    type="password"
-                    revealable
-                    placeholder="Enter your new password"
-                />
-                <x-ui.error name="password" />
-            </x-ui.field>
+        <!-- Session Status -->
+        <x-auth-session-status class="text-center" :status="session('status')" />
 
-            <x-ui.field required>
-                <x-ui.label>password confirmation</x-ui.label>
-                <x-ui.input 
-                    wire:model.blur="password_confirmation"
-                    type="password"
-                    revealable
-                    placeholder="Confirm your new password"
-                />
-                <x-ui.error name="password_confirmation" />
-            </x-ui.field>
-            
-            <x-ui.button 
-                class="w-full mt-4"
-                type="submit"
-            >
-                Reset
-            </x-ui.button>
+        <form method="POST" action="{{ route('password.update') }}" class="flex flex-col gap-6">
+            @csrf
+            <!-- Token -->
+            <input type="hidden" name="token" value="{{ request()->route('token') }}">
+
+            <!-- Email Address -->
+            <flux:input
+                name="email"
+                value="{{ request('email') }}"
+                :label="__('Email')"
+                type="email"
+                required
+                autocomplete="email"
+            />
+
+            <!-- Password -->
+            <flux:input
+                name="password"
+                :label="__('Password')"
+                type="password"
+                required
+                autocomplete="new-password"
+                :placeholder="__('Password')"
+                viewable
+            />
+
+            <!-- Confirm Password -->
+            <flux:input
+                name="password_confirmation"
+                :label="__('Confirm password')"
+                type="password"
+                required
+                autocomplete="new-password"
+                :placeholder="__('Confirm password')"
+                viewable
+            />
+
+            <div class="flex items-center justify-end">
+                <flux:button type="submit" variant="primary" class="w-full" data-test="reset-password-button">
+                    {{ __('Reset password') }}
+                </flux:button>
+            </div>
         </form>
-    </x-ui.fieldset>
-</div>
+    </div>
+</x-layouts.auth>

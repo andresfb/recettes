@@ -1,65 +1,67 @@
-<x-slot:title>
-    Register an account
-</x-slot>
+<x-layouts.auth>
+    <div class="flex flex-col gap-6">
+        <x-auth-header :title="__('Create an account')" :description="__('Enter your details below to create your account')" />
 
-<form 
-    wire:submit="register"
-    class="mx-auto w-full max-w-md space-y-4"
->
-    <div class="space-y-4 gap-y-1">
-        <x-ui.field >
-            <x-ui.label>name</x-ui.label>
-            <x-ui.input
-                wire:model="form.name"
-                placeholder="Enter your name"
+        <!-- Session Status -->
+        <x-auth-session-status class="text-center" :status="session('status')" />
+
+        <form method="POST" action="{{ route('register.store') }}" class="flex flex-col gap-6">
+            @csrf
+            <!-- Name -->
+            <flux:input
+                name="name"
+                :label="__('Name')"
+                :value="old('name')"
+                type="text"
+                required
+                autofocus
+                autocomplete="name"
+                :placeholder="__('Full name')"
             />
-            <x-ui.error name="form.name" />
-        </x-ui.field>
 
-        <x-ui.field >
-            <x-ui.label>email address</x-ui.label>
-            <x-ui.input
-                wire:model="form.email"
+            <!-- Email Address -->
+            <flux:input
+                name="email"
+                :label="__('Email address')"
+                :value="old('email')"
                 type="email"
-                placeholder="Enter your email"
+                required
+                autocomplete="email"
+                placeholder="email@example.com"
             />
-            <x-ui.error name="form.email" />
-        </x-ui.field>
 
-        <x-ui.field >
-            <x-ui.label>password</x-ui.label>
-            <x-ui.input
-                wire:model="form.password"
+            <!-- Password -->
+            <flux:input
+                name="password"
+                :label="__('Password')"
                 type="password"
-                revealable
-                placeholder="Create a secure password"
+                required
+                autocomplete="new-password"
+                :placeholder="__('Password')"
+                viewable
             />
-            <x-ui.error name="form.password" />
-        </x-ui.field>
 
-        <x-ui.field >
-            <x-ui.label>password confirmation</x-ui.label>
-            <x-ui.input
-                wire:model="form.password_confirmation"
+            <!-- Confirm Password -->
+            <flux:input
+                name="password_confirmation"
+                :label="__('Confirm password')"
                 type="password"
-                revealable
-                placeholder="Confirm your password"
+                required
+                autocomplete="new-password"
+                :placeholder="__('Confirm password')"
+                viewable
             />
-            <x-ui.error name="form.password_confirmation" />
-        </x-ui.field>
+
+            <div class="flex items-center justify-end">
+                <flux:button type="submit" variant="primary" class="w-full" data-test="register-user-button">
+                    {{ __('Create account') }}
+                </flux:button>
+            </div>
+        </form>
+
+        <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+            <span>{{ __('Already have an account?') }}</span>
+            <flux:link :href="route('login')" wire:navigate>{{ __('Log in') }}</flux:link>
+        </div>
     </div>
-
-    <x-ui.button
-        class="w-full"
-        type="submit"
-    >
-        Register
-    </x-ui.button>
-
-    <x-ui.link 
-        variant="soft"
-        href="{{ route('login') }}"
-    >
-        Already have an account? <span class="underline">Log in</span>
-    </x-ui.link>
-</form>
+</x-layouts.auth>

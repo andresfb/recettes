@@ -1,11 +1,5 @@
-<x-slot:title>
-    {{ $title ?? 'Sheaf UI' }}
-</x-slot:title>
-
-<x-layouts.base>
-    <x-layouts.partials.nav />
-
-    <div class="max-w-3xl mx-auto mt-30">
+<x-layouts.app.sidebar :title="$title ?? null">
+    <flux:main>
         {{ $slot }}
-    </div>
-</x-layouts.base>
+    </flux:main>
+</x-layouts.app.sidebar>
